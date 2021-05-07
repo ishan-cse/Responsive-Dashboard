@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Responsive Dashboard </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <!-- add icon link -->
+        <link rel = "icon" href ="assets/img/ndub_logo.png" type = "image/x-icon">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid header_container">
+                <div class="row p-3 mb-3 header_row">
+                    <img src="assets/img/cover.png" alt="logo" class="img-fluid header_img">
+                </div>
+            </div>
+        </header>
+        <section class="content-section">
+            <div class="container-fluid">
+                <!-- dashboard -->
+                <div class="row">  
+                    <!-- start sidebar menu -->
+                    <div class="col-lg-3 col-md-12 p-3 mb-2 text-white side_bars"> 
+
+                            <p class="dsb_text text-center">Dashboard</p>
+
+                            <img src="assets/img/photo.jpg" alt="photo" class="rounded-circle img-fluid mx-auto d-block profile-img img-thumbnail" height="85px" width="85px">
+
+                            <h5 class="text-center dsb_sidebar_info">Alice</h5>
+
+                            <h6 class="text-center dsb_sidebar_info">Super Admin</h6>
+
+                            <nav class="navbar navbar-expand-lg navbar-light"> <!-- responsive break point -->
+
+                                <!-- icon & target for collapse -->
+
+                                <div class="col-xl-12">
+                                    
+                                    <button type="button" class="navbar-toggler bg-light" data-toggle="collapse"
+                                            data-target="#menus" > <!-- target id collapse -->
+                                            <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <div class="row menu">
+                                        <!-- div for collapse with target id -->
+                                        <div id="menus" class="collapse navbar-collapse sidevars">
+                                            <ul>
+                                                <li><a href="dashboard.html" class="menup"><i class="fas fa-user-circle"></i> My Profile</a></li>
+                                                <!-- start dropdown menu -->
+                                                <li><a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-edit"></i> Update Your Profile </a>
+                                                    <ul class="collapse list-unstyled" id="homeSubmenu1">
+                                                        <li><a href="#"> <i class="fas fa-edit"></i> Profile Information </a></li>
+                                                        <li><a href="#"> <i class="fas fa-upload"></i> Upload New Photo </a></li>
+                                                        <li><a href="#"> <i class="fas fa-edit"></i> Change Password </a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- end dropdown menu -->
+                                                <li><a href="#" class="menul"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- div end collapse -->
+                        </nav>
+                    </div>
+                    <!-- end sidebar menu -->
+                    <!-- start dashboard information/content section -->
+                    <div class="col-lg-9 col-md-12 p-3 mb-2 bg-light text-dark" id="dashboard_section"> 
+                        <div class="scrollable">
+                        <!--data/content -->
+                            <h3 class="text-info"><b>Dashboard content section</b></h3>
+                            <br>
+                            <p class="text-success">This is responsive admin & dashboard template.</p>
+                            <p>We used HTML,CSS & Bootstrap for this template. We made this template for our B.Sc. in Computer Science & Engineering final year project.</p>
+                            <p class="text-danger">Thanks.</p>
+                            <h3 class="text-">Developed by <b class="text-primary">Md. Harun Aur Rashid Khan Ishan</b>.</h3>
+                        </div>
+                    </div>
+                    <!-- end dashboard information/content section -->
+                </div>
+            </div>
+        </section>
+        <footer class="footer-section">
+            <div class="container-fluid">
+            </div>
+        </footer>        
+        <!-- all js link -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </body>
+</html>
